@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            background-color: lightgray;
+            margin: auto;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            /* align-items: center; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            margin: 40px 10%;
+            font-size: 20px;
+        }
+        .content h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slider-item {
+            padding: 20px;
+            margin: 0 10px;
+            text-align: center;
+        }
+        .slider-item img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .slider-item p {
+            margin-top: 10px;
+        }
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10; /* Ensure arrows are above other elements */
+        }
+        .slider-arrow.left {
+            left: 10px;
+        }
+        .slider-arrow.right {
+            right: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #04AA6D;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .lab-tour {
+            background-color: #ffecda;
+            width: 100%;
+        }
+        .lab-tour-content {
+            padding: 20px; /* Add some padding for the content */
+            max-width: 1200px; /* Optional: constrain width */
+            margin: 0 auto; /* Center the content */
+        }
+        .hel{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="hel">
+
+    <div class="info-section" style="background: linear-gradient(to right, #ffecd2, #fcb69f); text-align: center; margin: 0;">
+        <h1 style="margin: 0; padding: 20px;">The Shang Adsorption and Separation Lab</h1>
+    </div>
+    <div class="navbar">
+        <div class="navbar-container" style="align-items: center; max-width: 992px;">
+            <ul class= "los" style="list-style-type: none; padding: 0; margin: 0; display: flex; align-items: center;">
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">People
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pi.html">PI</a>
+                        <a href="members.html">Members</a>
+                    </div>
+                </li>
+                <li><a class="active" href="research.html">Research</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Publications 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="publication.html">Journal Papers</a>
+                        <a href="patent.html">Patents</a>
+                        <a href="presentation.html">Presentations</a>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="./images/Trapdoor.jpg" alt="Trapdoor Mechanism">
+    </div>
+
+
+
+<div class="content">
+    <h1>Research</h1>
+    <p>Our research focuses on the physical chemistry of gas adsorption and diffusion, crucial for advancements in energy and environmental technologies. We work on designing and synthesizing "active" porous materials for various gas separation applications like H₂ and CH₄ purification, CO₂ capture, VOCs removal, CO removal for fuel cells, flue gas purification, and desulfurization of natural gas. Utilizing advanced experimental techniques such as multi-component column breakthrough of adsorption, in situ synchrotron PXRD, in situ neutron powder diffraction, and in situ X-ray absorption spectroscopy, alongside computational methods like ab initio density functional theory (DFT) and force field molecular simulations, we aim to develop highly selective molecular sieves, not necessarily based on size/shape discrimination. Our specialty lies in creating stimuli-responsive porous adsorbents that control selective guest admission through "smart" pore apertures activated by factors such as guest molecules, temperature, pressure, light, and electric fields. Our ultimate goal is to innovate adsorbent materials that enhance the efficiency and sustainability of energy and environmental solutions. Targeted applications of interests include:</p>
+    <ul>
+        <li>CO₂ capture</li>
+        <li>CH₄ capture</li>
+        <li>Natural gas/biogas/landfill gas purification</li>
+        <li>Low temperature NOₓ removal</li>
+        <li>VOCs (volatile organic compounds) removal</li>
+        <li>NH₃ removal</li>
+        <li>CO removal</li>
+        <li>Paraffin/olefin separation</li>
+        <li>Gas storage</li>
+    </ul>
+
+    <h1>Research Highlights</h1>
+    <div class="slider">
+        <button class="slider-arrow left" onclick="slideLeft()">❮</button>
+        <div class="slider-container" id="slider-container">
+            <div class="slider-item">
+                <img src="./images/jacs.webp" alt="Item 1">
+                <p>J. Am.Chem. Soc., 2012, 134, 19246-19253</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/chem.webp" alt="Item 2">
+                <p>ChemComm 2014, 50(35), 4544</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/sd.webp" alt="Item 3">
+                <p>ChemComm 2015, 51(79), 14716</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/nano.webp" alt="Item 4">
+                <p>Nano Letters 2017, 17, 1.</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/sa.webp" alt="Item 5">
+                <p>Nat. Commun. 2017, (8), 15777</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/green.webp" alt="Item 6">
+                <p>Green Chemistry 2019, 21, 1267.</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/adva.webp" alt="Item 7">
+                <p>Advanced Materials 2019, 31(12), 1806774.</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/chee.webp" alt="Item 8">
+                <p>Chemical Science 2020, 11, 6670.</p>
+            </div>
+            <div class="slider-item">
+                <img src="./research images/CCS&T 2023, 8, 100126..pdf" alt="Item 9">
+                <p>CCS&T 2023, 8, 100126.</p>
+            </div>
+            <div class="slider-item">
+                <img src="./research images/ACS ES&T Engineering 2023, 3, 9, 1297..jpg" alt="Item 10">
+                <p>ACS ES&T Engineering 2023, 3, 9, 1297.</p>
+            </div>
+            <div class="slider-item">
+                <img src="./images/small.webp" alt="Item 11">
+                <p>Small 2024, 20, 2400064.</p>
+            </div>
+        </div>
+        <button class="slider-arrow right" onclick="slideRight()">❯</button>
+    </div>
+
+    <h1>Lab Tour</h1>
+    <p style="text-align: center;">Apart from facilities for routine microscopy and spectroscopy studies, we have (or privileged access to) unique and cutting-edge research facilities for our research. Some examples are listed below.</p>
+    <div class="lab-tour">
+        <div class="lab-tour-content">
+            <div class="slider">
+                <button class="slider-arrow left" onclick="slideLeftLab()">❮</button>
+                <div class="slider-container" id="slider-container-lab">
+                    <div class="slider-item">
+                        <img src="./lab images/Parr® Reactor.jpg" alt="Lab Tour 1">
+                        <p>
+                            Parr Reactor for high P/T and high throughput (catalytic) reaction and adsorbents/catalysts synthesis</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/Micromeritics® AutoChem 2950 HP.jpg" alt="Lab Tour 2">
+                        <p>Micromeritics Autochem HP 2950 with Mass Spec and TCD for high P/T gas adsorption and catalysis study</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/Micromeritics® VacPrep Degasser and 3FLEX Surface Characterization Analyzer.jpg" alt="Lab Tour 3">
+                        <p>
+                            Micromeritics 3Flex for low P (corrosive) gas/vapor adsorption study</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/In-house built gas storage apparatus.webp" alt="Lab Tour 4">
+                        <p>In-house built gas storage apparatus for high P (up to 150 bar) and variant T gas storage study</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./images/lab5.webp" alt="Lab Tour 5">
+                        <p>In-house built breakthrough and P/TSA apparatus for dynamic (mixture) gas adsorption and separation study as well as process demonstration (1:Two columns for P/TSA process; 2: Breakthrough column; 3:Culation bath for controlling the temperature of furnace for in-situ activation, 4: Fluid circulation bath for controlling the temperature of adsorption experiment; 5:Vacuum pump; 6: Monitor, 7: Gas dispense system; 8.LabVIEW hardware: 9:NOx analyzer; 10:Mass Spectrometer)</p>
+                    </div>
+                    <div class="slider-item" style="padding-left:30px ;">
+                        <img src="./images/lab6.webp" alt="Lab Tour 6">
+                        <p>PXRD beamline@Australian Synchrotron for advanced gas adsorption/catalysis study at atomic scale</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./images/lab7.webp" alt="Lab Tour 7" id="lab7">
+                        <p>
+                            XAS beamline@Australian Synchrotron for advanced gas adsorption/catalysis study at atomic scale</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./images/lab8.webp" alt="Lab Tour 8">
+                        <p>
+                            In-house built environmental cell (together designed by PI Shang and the Principle Scientist at the Australian Synchrotron) for in situ gas adsorption/catalysis study at various temperatures and gas atmosphere</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./images/lab9.webp" alt="Lab Tour 9">
+                        <p>Density functional theory license and package for theoretical simulations complimentary to experimental study</p>
+                    </div>
+                    <!-- <div class="slider-item">
+                        <img src="./images/Micromeritics VacPrep Degasser and 3Flex Surface Characterization Analyzer.jpg alt="Lab Tour 10">
+                        <p>
+                            Micromeritics VacPrep Degasser and 3Flex Surface Characterization Analyzer for low P (corrosive) gas/vapor adsorption study. The 3Flex can be coupled with an E-field system.</p>
+                    </div> -->
+                    <div class="slider-item">
+                        <img src="./lab images/In-house built direct air capture (DAC) system.jpg" alt="Lab Tour 11">
+                        <p>In-house built direct air capture (DAC) system</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/In-situ FTIR (IRAffinity-1, SHIMADZU).jpg" alt="Lab Tour 12">
+                        <p>
+                            In-situ FTIR (IRAffinity-1, SHIMADZU) for the analysis of mechanisms of gas adsorption</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/Labsolar-6A All-Glass Automatic on-line Trace Gas Analysis System.jpg" alt="Lab Tour 13">
+                        <p>Labsolar-6A All-Glass Automatic on-line Trace Gas Analysis System connected to GC for gas (e.g., CO2 and NOx) adsorption and photocatalytic conversion</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/PerkinElmer® Gas Chromatography.jpg" alt="Lab Tour 14">
+                        <p>PerkinElmer gas chromatography connected to an on-line photocatalytic system to detect the gas conversion products and their concentrations</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/Rotation oven.jpg" alt="Lab Tour 15">
+                        <p>Rotation oven</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/MKS® Multigas Analyzer.jpg" alt="Lab Tour 16">
+                        <p>
+                            mks MultiGas FTIR Analyzers (left) capable of ppb sensitivity for multiple gas species (including toxic gases) combined with a column breakthrough (right)</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./lab images/Binder® Oven.jpg" alt="Lab Tour 17">
+                        <p>Ovens for adsorbent synthesis and sample drying</p>
+                    </div>
+                    
+                </div>
+                <button class="slider-arrow right" onclick="slideRightLab()">❯</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <p>© 2024 The Shang Adsorption and Separation Lab. All rights reserved.</p>
+</div>
+
+<script>
+    let currentIndex = 0;
+    let currentLabIndex = 0;
+
+    function slideLeft() {
+    const sliderContainer = document.getElementById('slider-container');
+    if (currentIndex > 0) {
+        currentIndex--;
+        sliderContainer.style.transform = `translateX(-${100 * currentIndex}%)`;
+    }
+}
+
+
+function slideRight() {
+    const sliderContainer = document.getElementById('slider-container');
+    const items = document.querySelectorAll('#slider-container .slider-item');
+    if (currentIndex < items.length - 1) {
+        currentIndex++;
+        sliderContainer.style.transform = `translateX(-${100 * currentIndex}%)`;
+    }
+}
+
+function slideLeftLab() {
+    const sliderContainerLab = document.getElementById('slider-container-lab');
+    if (currentLabIndex > 0) {
+        currentLabIndex--;
+        sliderContainerLab.style.transform = `translateX(-${100 * currentLabIndex}%)`;
+    }
+}
+
+
+function slideRightLab() {
+    const sliderContainerLab = document.getElementById('slider-container-lab');
+    const items = document.querySelectorAll('#slider-container-lab .slider-item');
+    if (currentLabIndex < items.length - 1) {
+        currentLabIndex++;
+        sliderContainerLab.style.transform = `translateX(-${100 * currentLabIndex}%)`;
+    }
+}
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            var dropdownContent = dropdown.querySelector('.dropdown-content');
+
+            dropdown.addEventListener('mouseover', function() {
+                dropdownContent.style.display = 'block';
+            });
+
+            dropdown.addEventListener('mouseout', function() {
+                dropdownContent.style.display = 'none';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

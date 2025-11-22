@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Banner with Navbar</title>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    <style>
+        body {
+            
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            margin: auto;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hel{
+            background-color: white;
+        }
+        
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            /* align-items: center; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .welcome {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 10%;
+        }
+        
+        .jin-img {
+            width: 30%;
+            max-width: 300px; /* Max width for larger screens */
+        }
+        .jin-img img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Optional: add border radius */
+        }
+        .jin-info {
+            margin-left: 20px;
+            font-size: 18px; /* Increase font size */
+            width: 70%; /* Default width */
+            text-align: justify;
+        }
+        .jin-info h1 {
+            font-size: 36px; /* Increase heading size */
+            color: brown; /* Heading color */
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            background-color: #333;
+        }
+        .vision {
+            text-align: center;
+            background-color: #ffecda;
+            padding: 40px 10%;
+        }
+        .vision h1 {
+            font-size: 36px; /* Increase heading size */
+            margin-bottom: 20px;
+        }
+        .vision-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .vision img {
+            width: 40%;
+            margin-right: 20px;
+        }
+        .vision-text {
+            width: 60%;
+            text-align: justify;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #04AA6D;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="info-section" style="background: linear-gradient(to right, #ffecd2, #fcb69f); text-align: center; margin: 0;">
+        <h1 style="margin: 0; padding: 20px;">The Shang Adsorption and Separation Lab</h1>
+    </div>
+    <div class="navbar">
+        <div class="navbar-container" style="align-items: center; max-width: 992px;">
+            <ul class= "los" style="list-style-type: none; padding: 0; margin: 0; display: flex; align-items: center;">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">People
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pi.html">PI</a>
+                        <a href="members.html">Members</a>
+                    </div>
+                </li>
+                <li><a href="research.html">Research</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Publications 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="publication.html">Journal Papers</a>
+                        <a href="patent.html">Patents</a>
+                        <a href="presentation.html">Presentations</a>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="hel">
+    <div class="banner">
+        <img src="./images/Trapdoor.jpg" alt="Trapdoor Mechanism">
+    </div>
+
+<div class="welcome">
+    <div class="jin-img" style="width: 30%; float: left;">
+        <img src="./images/photos.jpg" alt="Dr. Jin Shang" style="width: 100%; height: auto;">
+    </div>
+    <div class="jin-info" style="width: 70%; float: left;">
+        <h1 style="color: brown;">Dr. Jin Shang</h1>
+        <p>Prof. Jin Shang holds a tenured position as an Associate Professor at the City University of Hong Kong, where he heads the Adsorption Separation Lab in the School of Energy and Environment. A seasoned chemical engineer, Prof. Shang's expertise lies in adsorption-based gas separation technology, specifically focusing on carbon capture, carbon removal, natural gas and hydrogen purification, and the extraction of ambient toxic gases or vapors. His research aims to understand the fundamental physical chemistry of molecular adsorption, using a blend of experimental and computational methods to engineer designer adsorbents and develop adsorption processes. Prof. Shang is credited with discovering the molecular trapdoor mechanism, a novel gas separation method now recognized as the 4th mechanism for adsorptive gas separation. This discovery has shown the highest CO2 selectivity in natural gas purification. His work on carbon capture technology spans adsorbent materials design, separation process development, and demonstration.</p>
+        <p>
+            He has been recognized for his contributions with several prestigious awards, such as the ‘Carbon Capture Award for Mid-career Researcher’ from the International Association for Carbon Capture and Surface Measurement Systems in 2024, and the ‘ISTP-Bogen Young Scientist Award’ by the International Congress on Separation and Purification Technology in 2022. Prof. Shang also serves as an editorial role for several esteemed journals in his field, including senior editor for <i>Cambridge Prisms: Carbon Technologies</i>, Associate Editor (Separation Processes) for <i>Frontiers in Chemical Engineering</i>, and editor for <i>Carbon Capture Science & Technology</i>. He also served as a guest editor for <i>Separation and Purification Technology</i> and <i>Environment International</i>. As of Spet 2024, Prof. Shang has published over 120 papers in high-impact journals, with an h-index of 48 and more than 6400 citations. He was named among Stanford's top 2% most highly cited scientists in 2022 and 2023.</p>
+    </div>
+</div>
+
+<div class="button-container">
+    <button id="learnMoreButton">Learn More</button>
+</div>
+
+<div class="vision">
+    <h1>Vision</h1>
+    <div class="vision-content">
+        <img src="./images/image for Vision.png" alt="Vision">
+        <div class="vision-text">
+            <p>At the Gas Adsorption and Separation Laboratory, we leverage our expertise in adsorption and innovative porous materials to develop the next generation of 'smart adsorbents' for societal benefit. These breakthrough applications utilize advanced engineered materials and tailored adsorption processes to produce energy and environmental solutions that enhance quality of life.</p>
+            <p>We collaborate with global experts from Hong Kong, Taiwan, Mainland China, Australia, New Zealand, the UK, South Korea, Singapore, Europe, and the US. Our research addresses:</p>
+            <ul>
+                <li>Carbon capture to combat climate change.</li>
+                <li>Hydrocarbon purification for energy and manufacturing.</li>
+                <li>Toxic gas removal to protect health and the environment.</li>
+            </ul>
+            <p>We are also committed to training future research leaders and creating new industrial opportunities for Greater China and the world. Our mission is to transform fundamental research into practical technologies for a sustainable future.</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <p>© 2024 The Shang Adsorption and Separation Lab. All rights reserved.</p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var dropdown = document.querySelector('.dropdown');
+    var dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdown.addEventListener('mouseover', function() {
+        dropdownContent.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseout', function() {
+        dropdownContent.style.display = 'none';
+    });
+});
+document.getElementById('learnMoreButton').addEventListener('click', function() {
+        window.location.href = 'pi.html';
+    });
+
+
+</script>
+</body>
+</html>

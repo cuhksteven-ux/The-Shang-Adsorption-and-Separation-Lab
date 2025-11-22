@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            background-color: lightgray;
+            margin: auto;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            /* align-items: center; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px; /* Increase font size */
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #04AA6D;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 10%;
+        }
+        .left-section {
+            display: flex;
+            width: 45%; /* Adjust width as needed */
+        }
+        .left-subsection {
+            width: 50%; /* Adjust width of left and right sections */
+            padding-left: 10%;
+        }
+        .right-section {
+            width: 45%; /* Width for right section */
+        }
+        .left-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: add border radius */
+            padding-right: 5%;
+        }
+        h2 {
+            color: brown;
+            font-size: 24px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #04AA6D;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .hel{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hel">
+    <div class="info-section" style="background: linear-gradient(to right, #ffecd2, #fcb69f); text-align: center; margin: 0;">
+        <h1 style="margin: 0; padding: 20px;">The Shang Adsorption and Separation Lab</h1>
+    </div>
+    <div class="navbar">
+        <div class="navbar-container" style="align-items: center; max-width: 992px;">
+            <ul class= "los" style="list-style-type: none; padding: 0; margin: 0; display: flex; align-items: center;">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">People
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pi.html">PI</a>
+                        <a href="members.html">Members</a>
+                    </div>
+                </li>
+                <li><a href="research.html">Research</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Publications 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="publication.html">Journal Papers</a>
+                        <a href="patent.html">Patents</a>
+                        <a href="presentation.html">Presentations</a>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="banner">
+        <img src="./images/Trapdoor.jpg" alt="Trapdoor Mechanism">
+    </div>
+
+
+
+<div class="container">
+    <div class="left-section">
+        <div class="left-subsection">
+            <img src="./images/JinShang.jpg" alt="Dr. Jin Shang"> <!-- Replace with your image URL -->
+            <p style="text-align: center; font-weight: bold; margin-top: 5px;">Dr. Jin Shang</p>
+        </div>
+        <div class="left-subsection">
+            <h2>Education</h2>
+            <p>Dec. 2013</p>
+            <p>PhD in Chemical Engineering</p>
+            <p>The University of Melbourne, Australia</p><br>
+
+            <p>Jul. 2009</p>
+            <p>Master in Environmental Engineering</p>
+            <p>Northeastern University, China</p><br>
+
+            <p>Jul. 2007</p>
+            <p>Bachelor in Environmental Engineering</p>
+            <p>Northeastern University, China</p><br>
+            
+            <h2>Academic Appointment</h2>
+            <p>07/2022 - now</p>
+            <p>Associate Professor, School of Energy and Environment</p>
+            <p>City University of Hong Kong, HK</p><br>
+
+
+            <p>09/2016 - 06/2022</p>
+            <p>Assistant Professor, School of Energy and Environment</p>
+            <p>City University of Hong Kong, HK</p><br>
+
+            <p>05/2016 - 08/2016</p>
+            <p>Postdoctoral Fellow</p>
+            <p>Georgia Institute of Technology, US</p><br>
+
+            <p>03/2016 - 03/2017</p>
+            <p>Visiting Academic</p>
+            <p>The University of Melbourne, Australia</p><br>
+
+            <p>06/2015</p>
+            <p>Visiting Scholar in Susumu Kitagawa Group</p>
+            <p>Kyoto University, Japan</p><br>
+
+            <p>01/2015</p>
+            <p>Visiting Scholar in Silvia Bordiga Group</p>
+            <p>University of Turin, Italy</p><br>
+
+            <p>03/2013 – 03/2016</p>
+            <p>Postdoctoral Research Fellow</p>
+            <p>The University of Melbourne, Australia</p><br>
+
+            <p>03/2013 – 03/2016</p>
+            <p>Research Scientist and Engineer of CO2CRC</p><br>
+        </div>
+    </div>
+    
+    <div class="right-section">
+        <h2>Selected Awards & Honors</h2>
+        <p>2024: IACC-SMS Carbon Capture Award for Mid-career Researcher by The IACC (International Association for Carbon Capture) and SMS (Surface Measurement Systems)</p><br>
+        <p>2023: The 2023 University Alliance in Talent Education Development (UAiTED) Faculty Exchange Scholarship (UAiTED)</p><br>
+        <p>2023: Stanford's top 2% most highly cited scientists 2023</p><br>
+        <p>2023: The 2023 IChemE & CCST Young Investigator (YI) Award (IChemE and Elsevier)</p><br>
+        <p>2023: The 2023 RINENG Young Investigator (YI) Award by Results in Engineering (Elsevier)</p><br>
+        <p>2022: ISTP-Bogen Young Scientist Award by International Congress on Separation and Purification Technology (ISTP)</p><br>
+        <p>2022: Stanford's top 2% most highly cited scientists 2022</p><br>
+        <p>2020: Young Researcher Award by AIChE and Association of Pacific Rim Universities (APRU)</p><br>
+        <p>2015: Finalist of 2015 Win-in-Suzhou Start-up Competition Oceania, Australia</p><br>
+        <p>2014: Finalist of UNSW Energy Future Collaborative Innovation Award 2014, Australia</p><br>
+        <p>2014: The Chancellor's Prize for Excellence in the PhD Thesis, The University of Melbourne, Australia</p><br>
+        <p>2013: John Melvin Memorial Prize for Best PhD Thesis in the School of Engineering 2013, The University of Melbourne, Australia</p><br>
+        <p>2013, Chinese Government Award for Outstanding Self-Financed Students Abroad</p><br>
+        <p>2012, Melbourne International Research Scholarship, Australia</p><br>
+        <p>2012, Melbourne International Fee Remission Scholarship, Australia</p><br>
+        <p>2011, CO2CRC Postgraduate Scholarship, Australia</p><br>
+        <p>2009, Monash Graduate Scholarship, Australia</p><br>
+        <p>2009, Monash International Postgraduate Research Scholarship, Australia</p><br>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <p>© 2024 The Shang Adsorption and Separation Lab. All rights reserved.</p>
+</div>
+
+</body>
+</html>

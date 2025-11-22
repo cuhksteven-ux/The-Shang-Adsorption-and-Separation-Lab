@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            background-color: lightgray;
+            margin: auto;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            /* align-items: center; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px; /* Increase font size */
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #04AA6D;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin: 20px 10%;
+        }
+        .person-section {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            border-bottom: 1px solid #ccc; /* Separator line */
+            padding-bottom: 10px; /* Space below each member */
+        }
+        .person-section img {
+            width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover;
+            margin-right: 20px; /* Space between image and text */
+        }
+        h3 {
+            margin: 0;
+            color: brown;
+            font-size: 20px; /* Increased font size for member names */
+        }
+        .person-info {
+            font-size: 16px; /* Increased font size for member info */
+        }
+        .former {
+            text-align: center; /* Center the title and list */
+            margin: 20px 0; /* Add some margin for spacing */
+        }
+        .former h2 {
+            color: brown;
+        }
+        
+        .former ul {
+            padding: 0; /* Remove padding */
+            display: inline-block; /* Center the list */
+            text-align: left; /* Align text to the left */
+            margin: 0 auto; /* Center the list */
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0;
+        }
+        .hel{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info-section" style="background: linear-gradient(to right, #ffecd2, #fcb69f); text-align: center; margin: 0;">
+        <h1 style="margin: 0; padding: 20px;">The Shang Adsorption and Separation Lab</h1>
+    </div>
+    <div class="navbar">
+        <div class="navbar-container" style="align-items: center; max-width: 992px;">
+            <ul class= "los" style="list-style-type: none; padding: 0; margin: 0; display: flex; align-items: center;">
+                <li><a  href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">People
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pi.html">PI</a>
+                        <a class="active" href="members.html">Members</a>
+                    </div>
+                </li>
+                <li><a href="research.html">Research</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Publications 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="publication.html">Journal Papers</a>
+                        <a href="patent.html">Patents</a>
+                        <a href="presentation.html">Presentations</a>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="./images/Trapdoor.jpg" alt="Trapdoor Mechanism">
+    </div>
+
+<div class="hel">
+
+
+<div class="container">
+    <div class="person-section">
+        <img src="./images/JinShang.jpg" alt="Dr. Jin Shang"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Dr. Jin Shang</h3>
+            <p class="person-info">Prof. Jin Shang holds a tenured position as an Associate Professor at the City University of Hong Kong, where he heads the Adsorption Separation Lab in the School of Energy and Environment.</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Tianqi Wang.jpg" alt="Dr. Jane Doe"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Tianqi Wang (postdoc)</h3>
+            <p class="person-info">Research interests: Gas adsorption & conversion, Wastewater treatment, Photo(thermal)catalysis</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Yuanmeng TIAN.jpg" alt="Yuanmeng Tian"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Yuanmeng Tian (part-time postdoc)</h3>
+            <p class="person-info">Research interest: Porous coordination polymers, Gas separation, NOx removal and/or conversion</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Zeyu TAO.jpg" alt="Tianqi Wang"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Zeyu Tao (postdoc)</h3>
+            <p class="person-info">Research interests: Zeolite, Gas separation, CO2 capture, NOx removal.</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Daisong CHEN.jpg" alt="Daisong Chen"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Daisong Chen (PhD candidate)</h3>
+            <p class="person-info">Research interest: Gas adsorptive separation, Zeolites, CO2 capture, Adsorption mechanisms.</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Tianyi ZHANG_1.jpg" alt="Tianyi Zhang" style="max-width: 100%;height: auto;"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Tianyi Zhang (PhD candidate)</h3>
+            <p class="person-info">Research interests: Gas separation, metal-organic frameworks</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Boyu ZHANG.jpg" alt="Boyu Zhang"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Boyu Zhang (PhD candidate)</h3>
+            <p class="person-info">Research interest: Adsorption, Separations, Carbon capture, Process system engineering, Porous materials</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Xin YIN.jpg" alt="Xin Yin"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Xin Yin (PhD candidate)</h3>
+            <p class="person-info">Research interest: Zeolite synthesis, Membrane synthesis, Gas separation, Battery, Photocatalysis</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Yuying WANG.JPG" alt="Yuying Wang"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Yuying Wang (PhD candidate)</h3>
+            <p class="person-info">Research interests: NOx removal; Metal-organic frameworks</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Zhenyu HU.jpg" alt="Zhenyu HU"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Zhenyu HU (PhD candidate)</h3>
+            <p class="person-info">Research interests: Photocatalysis, H2O2 photosynthesis, Solar energy desalination, Membrane distillation</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Guangda LIANG.jpg" alt="Guangda Liang"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Guangda Liang (co-supervised PhD candidate)</h3>
+            <p class="person-info">Research interest: CO2 capture, Gas sorption, Energy analysis</p>
+        </div>
+    </div>
+    <div class="person-section">
+        <img src="./profile images/Junyi CHEN.jpg" alt="Junyi Chen"> <!-- Replace with your image URL -->
+        <div>
+            <h3>Junyi Chen (UG student)</h3>
+            <p class="person-info">Research interests: Direct CO2 capture from air using zeolites</p>
+        </div>
+    </div>
+</div>
+
+<div class="former">
+    <h2>Former Members</h2>
+    <ul>
+        <li>Aamir Hanif (former postdoc; currently, scientist @ Surface Measurement Systems in London)</li>
+        <li>Mingzhe Sun (former PhD; currently, scientist @ Surface Measurement Systems in London)</li>
+        <li>Shanshan Shang (former PhD; currently, Associate Professor @ South China University of Technology in Guangzhou, China)</li>
+        <li>Xincong Lv (former PhD; currently, postdoc @ Shenzhen University, China)</li>
+        <li>Gein Kai Beh (former PhD; currently, R&D Manager @ Schlegel Electronic Materials Asia Limited, Guangdong, China)</li>
+        <li>Mingjing He (former postdoc; currently, Deloitte Senior Consultant in Hong Kong)</li>
+        <li>Yang Yang (former Research Assistant)</li>
+        <li>Milad Asgarpour Khansary (former Research Assistant; currently, PhD student @ The University of British Columbia, Canada)</li>
+        <li>Tsz Kwan Law (former Research Assistant; currently, Research Officer @ Australian Consulate-General Hong Kong)</li>
+        <li>Yifeng Liu (former visiting PhD student from Monash University; current position : Research Scientist@ The Research Institute of Petroleum Exploration and Development (RIPED), China National Petroleum Corporation (CNPC))</li>
+        <li>Yinuo Jiang (former student helper; currently MSc student @ University of Cambridge)</li>
+        <li>Jialiang Zhang (former visiting scholar from University of Science and Technology Beijing)</li>
+    </ul>
+</div>
+</div>
+<div class="footer">
+    <p>© 2024 The Shang Adsorption and Separation Lab. All rights reserved.</p>
+</div>
+
+</body>
+</html>
